@@ -82,3 +82,9 @@ export namespace Transcriptions {
   export import Transcription = TranscriptionsAPI.Transcription;
   export import TranscriptionCreateParams = TranscriptionsAPI.TranscriptionCreateParams;
 }
+
+export function TranscriptionCreateParamsCreator(
+  params: TranscriptionCreateParams,
+): TranscriptionCreateParams {
+  return params;
+}

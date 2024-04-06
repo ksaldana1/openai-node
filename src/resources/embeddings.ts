@@ -123,3 +123,7 @@ export namespace Embeddings {
   export import Embedding = EmbeddingsAPI.Embedding;
   export import EmbeddingCreateParams = EmbeddingsAPI.EmbeddingCreateParams;
 }
+
+export function EmbeddingCreateParamsCreator(params: EmbeddingCreateParams): EmbeddingCreateParams {
+  return params;
+}

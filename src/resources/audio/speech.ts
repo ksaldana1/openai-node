@@ -50,3 +50,7 @@ export interface SpeechCreateParams {
 export namespace Speech {
   export import SpeechCreateParams = SpeechAPI.SpeechCreateParams;
 }
+
+export function SpeechCreateParamsCreator(params: SpeechCreateParams): SpeechCreateParams {
+  return params;
+}

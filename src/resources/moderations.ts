@@ -212,3 +212,7 @@ export namespace Moderations {
   export import ModerationCreateResponse = ModerationsAPI.ModerationCreateResponse;
   export import ModerationCreateParams = ModerationsAPI.ModerationCreateParams;
 }
+
+export function ModerationCreateParamsCreator(params: ModerationCreateParams): ModerationCreateParams {
+  return params;
+}

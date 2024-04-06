@@ -213,3 +213,17 @@ export namespace Images {
   export import ImageEditParams = ImagesAPI.ImageEditParams;
   export import ImageGenerateParams = ImagesAPI.ImageGenerateParams;
 }
+
+export function ImageCreateVariationParamsCreator(
+  params: ImageCreateVariationParams,
+): ImageCreateVariationParams {
+  return params;
+}
+
+export function ImageEditParamsCreator(params: ImageEditParams): ImageEditParams {
+  return params;
+}
+
+export function ImageGenerateParamsCreator(params: ImageGenerateParams): ImageGenerateParams {
+  return params;
+}
