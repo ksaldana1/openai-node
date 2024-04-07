@@ -96,3 +96,7 @@ export class CursorPage<Item extends { id: string }>
     return { params: { after: id } };
   }
 }
+
+export function CursorPageParamsCreator(params: CursorPageParams): CursorPageParams {
+  return params;
+}

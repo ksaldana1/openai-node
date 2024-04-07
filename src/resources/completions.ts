@@ -321,3 +321,21 @@ export namespace Completions {
   export import CompletionCreateParamsNonStreaming = CompletionsAPI.CompletionCreateParamsNonStreaming;
   export import CompletionCreateParamsStreaming = CompletionsAPI.CompletionCreateParamsStreaming;
 }
+
+export function CompletionCreateParamsBaseCreator(
+  params: CompletionCreateParamsBase,
+): CompletionCreateParamsBase {
+  return params;
+}
+
+export function CompletionCreateParamsNonStreamingCreator(
+  params: CompletionCreateParamsNonStreaming,
+): CompletionCreateParamsNonStreaming {
+  return params;
+}
+
+export function CompletionCreateParamsStreamingCreator(
+  params: CompletionCreateParamsStreaming,
+): CompletionCreateParamsStreaming {
+  return params;
+}

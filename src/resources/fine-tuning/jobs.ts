@@ -317,3 +317,15 @@ export namespace Jobs {
   export import JobListParams = JobsAPI.JobListParams;
   export import JobListEventsParams = JobsAPI.JobListEventsParams;
 }
+
+export function JobCreateParamsCreator(params: JobCreateParams): JobCreateParams {
+  return params;
+}
+
+export function JobListParamsCreator(params: JobListParams): JobListParams {
+  return params;
+}
+
+export function JobListEventsParamsCreator(params: JobListEventsParams): JobListEventsParams {
+  return params;
+}

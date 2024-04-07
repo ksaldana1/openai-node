@@ -59,3 +59,7 @@ export namespace Translations {
   export import Translation = TranslationsAPI.Translation;
   export import TranslationCreateParams = TranslationsAPI.TranslationCreateParams;
 }
+
+export function TranslationCreateParamsCreator(params: TranslationCreateParams): TranslationCreateParams {
+  return params;
+}

@@ -984,3 +984,21 @@ export namespace Completions {
   export import ChatCompletionCreateParamsStreaming = ChatCompletionsAPI.ChatCompletionCreateParamsStreaming;
   export import CompletionCreateParamsStreaming = ChatCompletionsAPI.CompletionCreateParamsStreaming;
 }
+
+export function ChatCompletionCreateParamsBaseCreator(
+  params: ChatCompletionCreateParamsBase,
+): ChatCompletionCreateParamsBase {
+  return params;
+}
+
+export function ChatCompletionCreateParamsNonStreamingCreator(
+  params: ChatCompletionCreateParamsNonStreaming,
+): ChatCompletionCreateParamsNonStreaming {
+  return params;
+}
+
+export function ChatCompletionCreateParamsStreamingCreator(
+  params: ChatCompletionCreateParamsStreaming,
+): ChatCompletionCreateParamsStreaming {
+  return params;
+}

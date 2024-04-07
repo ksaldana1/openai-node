@@ -200,3 +200,11 @@ export namespace Files {
   export import FileCreateParams = FilesAPI.FileCreateParams;
   export import FileListParams = FilesAPI.FileListParams;
 }
+
+export function FileCreateParamsCreator(params: FileCreateParams): FileCreateParams {
+  return params;
+}
+
+export function FileListParamsCreator(params: FileListParams): FileListParams {
+  return params;
+}
